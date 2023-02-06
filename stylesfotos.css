@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+background-color: black;
+list-style: none;
+text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quadro-fotos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos1 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.foto {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+.f1 {
+    background-image: url('https://images-ext-1.discordapp.net/external/jMU46n5KgdhwLvSdd1ry2xVTszkvcVHBTsEXP_9YQ3o/https/images8.alphacoders.com/121/1213555.jpg?width=1202&height=676');
+}
+.f2 {
+    background-image: url('https://cinemaniaec.files.wordpress.com/2021/12/the-batman-still.jpg?=816');
+}
+.f3 {
+    background-image: url('https://images-ext-1.discordapp.net/external/jL-2py828uhu2mx281rhsAFuAG7aoEqT5Y-sOpyXJ0Q/https/images4.alphacoders.com/119/thumbbig-1199261.webp');
+}
+
+.f4 {
+    background-image: url('https://images-ext-2.discordapp.net/external/TgVVK7N8UwO7UAqZpvoN_6gAdMb_IBuxgq2XzmCUrxc/https/images4.alphacoders.com/121/thumbbig-1214220.webp');
+}
+
+.f5 {
+    background-image: url('https://images-ext-2.discordapp.net/external/v775DWDD4Pt_EMhPYKYYyAWOd3vo4MBbTU_R977afrs/https/images6.alphacoders.com/120/thumbbig-1203355.webp');
+}
+
+.f6 {
+    background-image: url('https://images-ext-1.discordapp.net/external/irJyaumrz-EsTET4bnha5tqm4tS5-81lGZbwaczPZcI/https/images3.alphacoders.com/121/thumbbig-1214221.webp');
+}
+
+.f7 {
+    background-image: url('https://images-ext-2.discordapp.net/external/jHIATM6dRxEW3VDzaxmAjmsM3n4VwwmVPzKBn-3hieA/https/images.alphacoders.com/119/1199262.jpg?width=1014&height=676');
+}
+
+.f8 {
+    background-image: url('https://images-ext-2.discordapp.net/external/fOWuy3rYIujCBPKxJVUWohO8CmZIritm4lCL2RpJtPU/https/images5.alphacoders.com/120/thumbbig-1206049.webp');
+}
+
+.f9 {
+    background-image: url('https://images-ext-2.discordapp.net/external/An2Ft3-PBLPnjvviCY4j38fO2ZtV8xHOzqr5bv0xa9U/https/www.slashfilm.com/img/gallery/5-moments-in-the-batman-that-prove-jim-gordon-is-the-real-mvp/l-intro-1646837569.jpg?width=1208&height=676');
+}
+
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        margin-top: 10px;
+        display: none;
+    }
+
+    .fotos1 {
+        grid-template-columns: 1fr;
+    }
+
+    .quadro-fotos {
+        margin-top: 10px;
+    }
+
+    .foto {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+}
